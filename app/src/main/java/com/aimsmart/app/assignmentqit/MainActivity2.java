@@ -7,15 +7,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.data.DataHolder;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -29,13 +34,15 @@ public class MainActivity2 extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
     RecyclerAdapter adapter;
-    List<String> list;
+    EditText search;
+    List<data> dataList;
     Button logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         recyclerView = findViewById(R.id.recycle1);
+        search = findViewById(R.id.searchid);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
@@ -55,6 +62,8 @@ public class MainActivity2 extends AppCompatActivity {
                 Log.i("TAG12", "onSuc: Main2" + response.message());
                 data1 data = response.body();
 //                Toast.makeText(MainActivity2.this, response.code(), Toast.LENGTH_SHORT).show();
+                assert data != null;
+                dataList= data.getData();
                 adapter = new RecyclerAdapter(MainActivity2.this,data.getData());
                 recyclerView.setAdapter(adapter);
             }
@@ -73,5 +82,30 @@ public class MainActivity2 extends AppCompatActivity {
                 finish();
             }
         });
+        search.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                List<data> temp = new ArrayList();
+                for(data d: dataList){
+                    //or use .equal(text) with you want equal match
+                    //use .toLowerCase() for better matches
+                    if(d.getTitle().toLowerCase().contains(s.toString())){
+                        temp.add(d);
+                    }
+                }
+                adapter.updateList(temp);
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
+
 }

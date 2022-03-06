@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.common.data.DataHolder;
 
 import java.util.List;
 
@@ -45,6 +46,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     public int getItemCount() {
         return mData.size();
     }
+
+    public void updateList(List<data> temp) {
+        this.mData = temp;
+    }
+
     public class RecyclerviewHolder extends RecyclerView.ViewHolder{
         TextView time,sourse,title,description;
         ImageView imageView;
