@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "653406781593",
+    "firebase_url": "https://sample-82944-default-rtdb.firebaseio.com",
+    "project_id": "sample-82944",
+    "storage_bucket": "sample-82944.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653406781593:android:e898184d60fe8e03e5f808",
+        "android_client_info": {
+          "package_name": "com.aimsmart.app.assignmentqit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653406781593-2126li6hdh8vask9rp045vqddv8em6qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK0NAFKu8VJQ6zaViLcWiEpu7NfCegQOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653406781593-2126li6hdh8vask9rp045vqddv8em6qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653406781593:android:132cf28a6506dbf2e5f808",
+        "android_client_info": {
+          "package_name": "com.aimsmart.app.mymini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653406781593-p7gsvuiunv6j9k0kicksqtjshfea0rp4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aimsmart.app.mymini",
+            "certificate_hash": "fe881f8692fd7f2a2f4e2ce1858024bee442fcb5"
+          }
+        },
+        {
+          "client_id": "653406781593-2126li6hdh8vask9rp045vqddv8em6qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK0NAFKu8VJQ6zaViLcWiEpu7NfCegQOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653406781593-2126li6hdh8vask9rp045vqddv8em6qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653406781593:android:5e0d9df46e206b17e5f808",
+        "android_client_info": {
+          "package_name": "com.aimsmart.app.myminidata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653406781593-2126li6hdh8vask9rp045vqddv8em6qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK0NAFKu8VJQ6zaViLcWiEpu7NfCegQOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653406781593-2126li6hdh8vask9rp045vqddv8em6qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

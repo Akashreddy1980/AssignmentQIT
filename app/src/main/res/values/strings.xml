@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AssignmentQIT</string>
+    <string name="password">Password</string>
+    <string name="email">email</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="social">Social</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="name">Name</string>
+    <string name="john_doe">John Doe</string>
+    <string name="Email">Email</string>
+    <string name="johndoe_gmail_com">johndoe@gmail.com</string>
+    <string name="contact_no">Contact no</string>
+    <string name="i_agree_with_terms_conditions">I agree with</string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u>.</string>
+    <string name="sign_in">Sign In!</string>
+    <string name="already_have_an_account">Already have an Account?</string>
+    <string name="register_now">Register Now</string>
+    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="login_with">Login with</string>
+    <string name="login">Login</string>
+    <string name="logout">LOGOUT</string>
+    <string name="search_in_feed">Search in feed</string>
+    <string name="_2_hours_ago">2 hours ago</string>
+    <string name="apple_admits_slowing_down_of_older_iphones">Apple admits slowing down of older iphones</string>
+    <string name="desp">Customer have long suspected iphone slow down over time.Now,Apple has confirmed some models do</string>
+    <string name="Api_key">b614173ef3cc4d5782e43d8ede8efbf8</string>
+</resources>
